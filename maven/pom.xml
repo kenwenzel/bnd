@@ -9,7 +9,7 @@
 	<description>Parent POM for the bnd maven plugins.</description>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<packaging>pom</packaging>
-	<version>${revision}</version>
+	<version>6.1.0</version>
 
 	<properties>
 		<revision>5.4.0-SNAPSHOT</revision>
