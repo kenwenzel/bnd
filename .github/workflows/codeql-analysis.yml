@@ -52,7 +52,7 @@ jobs:
         distribution: 'zulu'
         java-version: ${{ matrix.java }}
     - name: Initialize CodeQL Analysis
-      uses: github/codeql-action/init@v1
+      uses: github/codeql-action/init@v2
       with:
         languages: 'java'
     - name: Build for CodeQL Analysis
@@ -60,4 +60,4 @@ jobs:
       run: |
         ${{ format('./.github/scripts/{0}', matrix.script) }}
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v1
+      uses: github/codeql-action/analyze@v2
